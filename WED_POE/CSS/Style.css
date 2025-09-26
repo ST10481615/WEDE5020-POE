@@ -1,0 +1,268 @@
+/* This CSS file defines the styles for "The Sneaker Hub" website,
+    incorporating best practices from the provided design document.
+*/
+
+/* Global Styles
+    Defines the base typography and a simple box-sizing model for all elements.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #4A5568;
+    background-color: #F7FAFC;
+    padding-top: 5rem;
+}
+
+/* Utility Classes
+    These can be used for common styles.
+*/
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.mb-10 {
+    margin-bottom: 2.5rem;
+}
+
+/* Navigation Bar
+    Styles for the fixed header and navigation links, using Flexbox for alignment.
+*/
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 50;
+    padding: 1rem 3rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #4A5568;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4338CA;
+}
+
+/* Hero Section
+    Defines the gradient background and button styles for the main hero section.
+*/
+.hero-section {
+    background: linear-gradient(to right, #4F46E5, #8B5CF6);
+    color: #fff;
+    padding: 5rem 0;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.hero-button {
+    background-color: #fff;
+    color: #4338CA;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+    transform: scale(1.05);
+}
+
+/* Product Cards
+    Styles for the product showcase on the homepage and shop page, using Grid for the layout.
+*/
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.product-card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #4338CA;
+}
+
+.add-to-cart-button {
+    background-color: #4338CA;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #312E81;
+}
+
+/* Blog Posts
+    Styles for individual blog articles, with hover effects.
+*/
+.blog-post {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.blog-post img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+.blog-post-body {
+    padding: 1.5rem;
+}
+
+/* Form Styling
+    Styles for input fields and buttons in the contact form and newsletter section, with :focus state.
+*/
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: #4338CA;
+    box-shadow: 0 0 0 3px rgba(67, 56, 202, 0.2);
+}
+
+.form-button {
+    width: 100%;
+    background-color: #4338CA;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #312E81;
+}
+
+/* Footer
+    Defines styles for the footer at the bottom of the page.
+*/
+.footer {
+    background-color: #1A202C;
+    color: #A0AEC0;
+    padding: 2.5rem 0;
+}
+
+.social-icon {
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #fff;
+}
+
+/* Responsive Design with Media Queries
+    Adjusts styles for different screen sizes.
+*/
+@media (max-width: 767px) {
+    body {
+        padding-top: 4rem;
+    }
+    .nav {
+        padding: 1rem 1.5rem;
+    }
+    .hero-section {
+        padding: 4rem 1rem;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    .product-card {
+        margin-bottom: 1.5rem;
+    }
+}

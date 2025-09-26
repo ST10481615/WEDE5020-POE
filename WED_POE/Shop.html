@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <link rel="stylesheet" href="CSS/Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sneaker Hub - Shop</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="Hompage.html">The Sneaker Hub</a>
+            <ul>
+                <li><a href="Hompage.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact Us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>Our Collection</h1>
+
+        <div>
+            <!-- Sidebar for Filters -->
+            <aside>
+                <h2>Filters</h2>
+                <div>
+                    <label for="brand">Brand</label>
+                    <select id="brand">
+                        <option value="">All Brands</option>
+                        <option value="nike">Nike</option>
+                        <option value="adidas">Adidas</option>
+                        <option value="puma">Puma</option>
+                        <option value="new-balance">New Balance</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="size">Size</label>
+                    <input type="range" id="size" min="5" max="15" value="10">
+                    <div>
+                        <span>5</span>
+                        <span>15</span>
+                    </div>
+                </div>
+                <div>
+                    <label for="price">Price Range</label>
+                    <input type="range" id="price" min="50" max="500" value="250">
+                    <div>
+                        <span>R50</span>
+                        <span>R500+</span>
+                    </div>
+                </div>
+                <button>
+                    Apply Filters
+                </button>
+            </aside>
+
+            <!-- Product Grid -->
+            <section>
+                <!-- Product Card Example 1 -->
+                <div>
+                    <img src="Images/Nike Dunks.jpeg" style="width: 400px; height: 500px ;">
+                    <h3>Nike Dunks</h3>
+                    <p>Brand: Nike</p>
+                    <p>R3000.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Product Card Example 2 -->
+                <div>
+                    <img src="Images/Adidas Campus.jpeg" style="width: 400px; height: 500px ;">
+                    <h3>Adidas Campus</h3>
+                    <p>Brand: Adidas</p>
+                    <p>R2500.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Product Card Example 3 -->
+                <div>
+                    <img src="Images/Puma Suede.jpeg" style="width: 400px; height: 500px ;">
+                    <h3>Puma Suede</h3>
+                    <p>Brand: Puma</p>
+                    <p>R2000.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Product Card Example 4 -->
+                <div>
+                    <img src="Images/New Balance 550.jpeg" style="width: 400px; height: 500px ;">
+                    <h3>New Balance 550</h3>
+                    <p>Brand: New Balance</p>
+                    <p>R1500.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- More products would be listed here -->
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <p>&copy; 2025 The Sneaker Hub. All rights reserved.</p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
