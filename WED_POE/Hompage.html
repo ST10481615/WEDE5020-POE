@@ -1,88 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
+<head>
     <link rel="stylesheet" href="CSS/Style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Sneaker Hub - Home</title>
-</head>
+    </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <nav>
-            <a href="Hompage.html">The Sneaker Hub</a>
-            <ul>
-                <li><a href="Hompage.html">Home</a></li>
-                <li><a href="Shop.html">Shop</a></li>
-                <li><a href="About Us.html">About Us</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Contact Us.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="nav">
+                <a href="Hompage.html">The Sneaker Hub</a>
+                <ul>
+                    <li><a href="Hompage.html" class="nav-link">Home</a></li>
+                    <li><a href="Shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="About Us.html" class="nav-link">About Us</a></li>
+                    <li><a href="Blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="Contact Us.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Main Content Section -->
     <main>
-        <section class="hero">
+        <section class="hero-section container text-center">
             <h1>Step into Style. Discover Your Sole-Mate.</h1>
             <p>
                 Explore the latest drops, exclusive collaborations, and timeless classics. Your next pair awaits.
             </p>
-            <a href="shop.html">
+            <a href="shop.html" class="hero-button">
                 Shop New Arrivals
             </a>
         </section>
 
-        <section class="featured-products">
-            <h2>Featured Sneakers</h2>
-            <div>
-                <!-- Example Featured Product Card 1 -->
-                <div>
-                    <img src="Images/Nike Dunks.jpeg" style="width: 600px; height: 600px ;">
-                    <h3>Nike Dunks</h3>
-                    <p>A timeless icon, redefined for modern streets.</p>
-                    <a href="shop.html">View Details</a>
+        <section class="featured-products container py-16">
+            <h2 class="text-center mb-10">Featured Sneakers</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="Images/Nike Dunks.jpeg" alt="Nike Dunks">
+                    <div class="product-card-body">
+                        <h3 class="product-title">Nike Dunks</h3>
+                        <p>A timeless icon, redefined for modern streets.</p>
+                        <a href="shop.html" class="view-details-button">View Details</a>
+                    </div>
                 </div>
-                <!-- Example Featured Product Card 2 -->
-                <div>
-                    <img src="Images/Adidas Campus.jpeg" style="width: 600px; height: 700px ;">
-                    <h3>Adidas Campus</h3>
-                    <p>Unmatched comfort meets cutting-edge design.</p>
-                    <a href="shop.html">View Details</a>
+                <div class="product-card">
+                    <img src="Images/Adidas Campus.jpeg" alt="Adidas Campus">
+                    <div class="product-card-body">
+                        <h3 class="product-title">Adidas Campus</h3>
+                        <p>Unmatched comfort meets cutting-edge design.</p>
+                        <a href="shop.html" class="view-details-button">View Details</a>
+                    </div>
                 </div>
-                <!-- Example Featured Product Card 3 -->
-                <div>
-                    <img src="Images/Puma Suede.jpeg" style="width: 600px; height: 700px ;">
-                    <h3>Puma Suede</h3>
-                    <p>Retro vibes with a modern twist.</p>
-                    <a href="shop.html">View Details</a>
+                <div class="product-card">
+                    <img src="Images/Puma Suede.jpeg" alt="Puma Suede">
+                    <div class="product-card-body">
+                        <h3 class="product-title">Puma Suede</h3>
+                        <p>Retro vibes with a modern twist.</p>
+                        <a href="shop.html" class="view-details-button">View Details</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="newsletter-signup">
-            <h2>Join The Hub Community!</h2>
+        <section class="newsletter-signup container text-center py-16">
+            <h2 class="mb-10">Join The Hub Community!</h2>
             <p>
                 Sign up for exclusive drops, news, and special offers directly to your inbox.
             </p>
-            <form>
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">
+            <form class="container" style="max-width: 400px; margin-top: 2rem;">
+                <input type="email" placeholder="Enter your email" required class="form-input">
+                <button type="submit" class="form-button">
                     Subscribe
                 </button>
             </form>
         </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <div>
-            <p>&copy; 2025 The Sneaker Hub. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-content container">
+            <p>© 2025 The Sneaker Hub. All rights reserved.</p>
             <div>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+                <a href="#" class="social-icon">Privacy Policy</a>
+                <a href="#" class="social-icon">Terms of Service</a>
             </div>
         </div>
     </footer>
+    
+    <script src="./JS/script.js"></script>
 </body>
 </html>

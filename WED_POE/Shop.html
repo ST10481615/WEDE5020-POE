@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
+<head>
     <link rel="stylesheet" href="CSS/Style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Sneaker Hub - Shop</title>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <nav>
-            <a href="Hompage.html">The Sneaker Hub</a>
-            <ul>
-                <li><a href="Hompage.html">Home</a></li>
-                <li><a href="Shop.html">Shop</a></li>
-                <li><a href="About Us.html">About Us</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Contact Us.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="nav">
+                <a href="Hompage.html">The Sneaker Hub</a>
+                <ul>
+                    <li><a href="Hompage.html" class="nav-link">Home</a></li>
+                    <li><a href="Shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="About Us.html" class="nav-link">About Us</a></li>
+                    <li><a href="Blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="Contact Us.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Main Content Section -->
-    <main>
-        <h1>Our Collection</h1>
+    <main class="container py-16">
+        <h1 class="text-center mb-10">Our Collection</h1>
 
-        <div>
-            <!-- Sidebar for Filters -->
+        <div class="shop-layout">
             <aside>
                 <h2>Filters</h2>
                 <div>
                     <label for="brand">Brand</label>
-                    <select id="brand">
+                    <select id="brand" class="form-input">
                         <option value="">All Brands</option>
                         <option value="nike">Nike</option>
                         <option value="adidas">Adidas</option>
@@ -40,74 +39,78 @@
                     </select>
                 </div>
                 <div>
-                    <label for="size">Size</label>
-                    <input type="range" id="size" min="5" max="15" value="10">
-                    <div>
+                    <label for="Size">Size</label>
+                    <input type="range" id="Size" min="5" max="15" value="10">
+                    <div class="range-display">
                         <span>5</span>
+                        <span id="size-display">10</span>
                         <span>15</span>
                     </div>
                 </div>
                 <div>
-                    <label for="price">Price Range</label>
-                    <input type="range" id="price" min="50" max="500" value="250">
-                    <div>
+                    <label for="Price">Price Range</label>
+                    <input type="range" id="Price" min="50" max="500" value="250">
+                    <div class="range-display">
                         <span>R50</span>
+                        <span id="price-display">R250.00</span>
                         <span>R500+</span>
                     </div>
                 </div>
-                <button>
+                <button class="form-button">
                     Apply Filters
                 </button>
             </aside>
 
-            <!-- Product Grid -->
-            <section>
-                <!-- Product Card Example 1 -->
-                <div>
-                    <img src="Images/Nike Dunks.jpeg" style="width: 400px; height: 500px ;">
-                    <h3>Nike Dunks</h3>
-                    <p>Brand: Nike</p>
-                    <p>R3000.00</p>
-                    <button>Add to Cart</button>
+            <section class="product-grid">
+                <div class="product-card">
+                    <img src="Images/Nike Dunks.jpeg" alt="Nike Dunks">
+                    <div class="product-card-body">
+                        <h3 class="product-title">Nike Dunks</h3>
+                        <p>Brand: Nike</p>
+                        <p class="product-price">R3000.00</p>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
                 </div>
-                <!-- Product Card Example 2 -->
-                <div>
-                    <img src="Images/Adidas Campus.jpeg" style="width: 400px; height: 500px ;">
-                    <h3>Adidas Campus</h3>
-                    <p>Brand: Adidas</p>
-                    <p>R2500.00</p>
-                    <button>Add to Cart</button>
+                <div class="product-card">
+                    <img src="Images/Adidas Campus.jpeg" alt="Adidas Campus">
+                    <div class="product-card-body">
+                        <h3 class="product-title">Adidas Campus</h3>
+                        <p>Brand: Adidas</p>
+                        <p class="product-price">R2500.00</p>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
                 </div>
-                <!-- Product Card Example 3 -->
-                <div>
-                    <img src="Images/Puma Suede.jpeg" style="width: 400px; height: 500px ;">
-                    <h3>Puma Suede</h3>
-                    <p>Brand: Puma</p>
-                    <p>R2000.00</p>
-                    <button>Add to Cart</button>
+                <div class="product-card">
+                    <img src="Images/Puma Suede.jpeg" alt="Puma Suede">
+                    <div class="product-card-body">
+                        <h3 class="product-title">Puma Suede</h3>
+                        <p>Brand: Puma</p>
+                        <p class="product-price">R2000.00</p>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
                 </div>
-                <!-- Product Card Example 4 -->
-                <div>
-                    <img src="Images/New Balance 550.jpeg" style="width: 400px; height: 500px ;">
-                    <h3>New Balance 550</h3>
-                    <p>Brand: New Balance</p>
-                    <p>R1500.00</p>
-                    <button>Add to Cart</button>
+                <div class="product-card">
+                    <img src="Images/New balance 550.jpeg" alt="New Balance 550">
+                    <div class="product-card-body">
+                        <h3 class="product-title">New Balance 550</h3>
+                        <p>Brand: New Balance</p>
+                        <p class="product-price">R1500.00</p>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
                 </div>
-                <!-- More products would be listed here -->
-            </section>
+                </section>
         </div>
     </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <div>
-            <p>&copy; 2025 The Sneaker Hub. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-content container">
+            <p>© 2025 The Sneaker Hub. All rights reserved.</p>
             <div>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
             </div>
         </div>
     </footer>
+    <script src="./JS/script.js"></script>
 </body>
 </html>

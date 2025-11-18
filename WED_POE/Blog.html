@@ -1,82 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
+<head>
     <link rel="stylesheet" href="CSS/Style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Sneaker Hub - Blog</title>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <nav>
-            <a href="Hompage.html">The Sneaker Hub</a>
-            <ul>
-                <li><a href="Hompage.html">Home</a></li>
-                <li><a href="Shop.html">Shop</a></li>
-                <li><a href="About Us.html">About Us</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Contact Us.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="nav">
+                <a href="Hompage.html">The Sneaker Hub</a>
+                <ul>
+                    <li><a href="Hompage.html" class="nav-link">Home</a></li>
+                    <li><a href="Shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="About Us.html" class="nav-link">About Us</a></li>
+                    <li><a href="Blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="Contact Us.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Main Content Section -->
-    <main>
-        <h1>The Sneaker Hub Blog: Latest News & Drops</h1>
+    <main class="container py-16">
+        <h1 class="text-center mb-10">The Sneaker Hub Blog: Latest News & Drops</h1>
 
-        <section>
-            <!-- Blog Post Example 1 -->
-            <article>
-                <img src="Images/Jordan 4s.jpeg" style="width: 400px; height: 500px ;">
-                <h2>Unveiling the "Quantum Leap" Collection</h2>
-                <p>Published on August 20, 2025 by The Editor</p>
-                <p>
-                    Get ready for our most anticipated release yet! The "Quantum Leap" collection pushes boundaries with innovative designs and futuristic materials. Read on for a sneak peek...
-                </p>
-                <a href="#">
-                    Read More
-                </a>
+        <section class="blog-list">
+            <article class="blog-post">
+                <img src="Images/Jordan 4s.jpeg" alt="Jordan 4s">
+                <div class="blog-post-body">
+                    <h2>Unveiling the "Quantum Leap" Collection</h2>
+                    <p>Published on August 20, 2025 by The Editor</p>
+                    <p>
+                        Get ready for our most anticipated release yet! The "Quantum Leap" collection pushes boundaries with innovative designs and futuristic materials. Read on for a sneak peek...
+                    </p>
+                    <a href="#" class="view-details-button">
+                        Read More
+                    </a>
+                </div>
             </article>
 
-            <!-- Blog Post Example 2 -->
-            <article>
-                <img src="Images/Evolution of the Sneaker.jpeg" style="width: 400px; height: 500px ;">
-                <h2>The Evolution of Air: A Retrospective</h2>
-                <p>Published on August 15, 2025 by Sneaker Historian</p>
-                <p>
-                    Dive deep into the archives and explore the iconic history of air cushioning technology. From its humble beginnings to global dominance...
-                </p>
-                <a href="#">
-                    Read More
-                </a>
+            <article class="blog-post">
+                <img src="Images/Evolution of the Sneaker.jpeg" alt="Evolution of the Sneaker">
+                <div class="blog-post-body">
+                    <h2>The Evolution of Air: A Retrospective</h2>
+                    <p>Published on August 15, 2025 by Sneaker Historian</p>
+                    <p>
+                        Dive deep into the archives and explore the iconic history of air cushioning technology. From its humble beginnings to global dominance...
+                    </p>
+                    <a href="#" class="view-details-button">
+                        Read More
+                    </a>
+                </div>
             </article>
 
-            <!-- Blog Post Example 3 -->
-            <article>
-                <img src="Images/Ways to style your sneaker.jpeg" style="width: 400px; height: 500px ;">
-                <h2>5 Ways to Style Your Favorite Kicks</h2>
-                <p>Published on August 10, 2025 by Fashionista</p>
-                <p>
-                    Elevate your sneaker game with these essential styling tips. From casual cool to high-fashion statements, we've got you covered...
-                </p>
-                <a href="#">
-                    Read More
-                </a>
+            <article class="blog-post">
+                <img src="Images/Ways to style your sneaker.jpeg" alt="Ways to style your sneaker">
+                <div class="blog-post-body">
+                    <h2>5 Ways to Style Your Favorite Kicks</h2>
+                    <p>Published on August 10, 2025 by Fashionista</p>
+                    <p>
+                        Elevate your sneaker game with these essential styling tips. From casual cool to high-fashion statements, we've got you covered...
+                    </p>
+                    <a href="#" class="view-details-button">
+                        Read More
+                    </a>
+                </div>
             </article>
-            <!-- More blog posts would be added here -->
-        </section>
+            </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <div>
-            <p>&copy; 2025 The Sneaker Hub. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-content container">
+            <p>© 2025 The Sneaker Hub. All rights reserved.</p>
             <div>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
             </div>
         </div>
     </footer>
+    <script src="./JS/script.js"></script>
 </body>
 </html>
